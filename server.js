@@ -18,6 +18,8 @@ var config = {
 // app.use(expres.static("public"));
 // app.use('/ui',express.static(__dirname+'/ui'));
 
+var pool = new Pool(config);
+
 app.get('/test-db', function(req,res) {
   //make a select request
     pool.query('SELECT * FROM articles',function(err,result){
