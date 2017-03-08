@@ -7,7 +7,6 @@ var app = express();
 app.use(morgan('combined'));
 
 var config = {
-  //host: 'localhost',
   user: 'amay-mishra',
   database: 'amay-mishra',
   host: 'db.imad.hasura-app.io',
@@ -27,7 +26,7 @@ var pool = new Pool(config);
 
 app.get('/test-db', function(req,res) {
   //make a select request
-    pool.query('SELECT * FROM articles',function(err,result){
+    pool.query('SELECT * FROM article',function(err,result){
        if (err){
            res.status(500).send(err.toString());
        } else{
