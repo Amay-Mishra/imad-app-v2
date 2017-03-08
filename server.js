@@ -15,8 +15,8 @@ var config = {
   password: process.env.DB_PASSWORD
 };
 
-app.use(expres.static("public"));
-app.use('/ui',express.static(__dirname+'/ui'));
+// app.use(expres.static("public"));
+// app.use('/ui',express.static(__dirname+'/ui'));
 
 app.get('/test-db', function(req,res) {
   //make a select request
