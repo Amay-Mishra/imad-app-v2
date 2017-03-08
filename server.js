@@ -13,7 +13,7 @@ var config = {
   host: 'db.imad.hasura-app.io',
   //path: '/database.php?pgsql=localhost%3A5432',
   port: '5432',
-  password: process.env.DB_PASSWORD
+  password: 'db-amay-mishra-42257'//process.env.DB_PASSWORD
 };
 
 // app.use(expres.static("public"));
