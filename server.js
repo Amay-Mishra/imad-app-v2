@@ -26,7 +26,7 @@ var pool = new Pool(config);
 
 app.get('/test-db', function(req,res) {
   //make a select request
-    pool.query('SELECT * FROM articles',function(err,result){
+    pool.query('SELECT * FROM user',function(err,result){
        if (err){
            res.status(500).send(err.toString());
        } else{
