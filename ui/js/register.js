@@ -18,7 +18,7 @@ function register() {
   var email = document.getElementById('reg-email').value;
   console.log(username);
   console.log(password);
-  request.open('POST','http://localhost:8080/register',true);
+  request.open('POST','/register',true);
   request.setRequestHeader('Content-Type', 'application/json');
   request.send(JSON.stringify({username: username, password: password, email: email}));
 };
