@@ -29,7 +29,7 @@ var config = {
   //host: 'localhost',
   user: 'amay-mishra',
   database: 'amay-mishra',
-  host: 'http://db.imad.hasura-app.io:5432',
+  host: 'db.imad.hasura-app.io:5432',
   port: '5432',
   password: process.env.DB_PASSWORD //process.env.DB-PASSWORD,
 };
