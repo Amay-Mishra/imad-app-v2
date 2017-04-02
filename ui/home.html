@@ -1,0 +1,191 @@
+<html>
+<head>
+  <link rel="icon" href="/ui/img/favico.ico" type="image/gif" sizes="16x16">
+  <link href="/ui/css/bootstrap.css" rel="stylesheet" />
+  <link href="/ui/css/rotating-card.css" rel="stylesheet" />
+  <link href="/ui/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="/ui/css/login.css" rel="stylesheet" />
+  <link href="/ui/css/overlay.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='/ui/js/jquery.min.js'></script>
+    <script src="/ui/js/overlay.js"></script>
+    <script src="/ui/js/register.js"></script>
+    <script src="/ui/js/login.js"></script>
+</head>
+<body>
+<!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span> -->
+  <div class="butt"><button class="button" onclick="openNav()">Login</button></div>
+  <!-- <div class="buttonDiv"><a href="#" onclick="openNav()" class="button">Link Button</a></div> -->
+        <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+
+
+            <div class="overlay-content">
+              <div class="login-page">
+                <div class="form">
+                  <form action="javascript:void(0)" class="register-form" id="reg-form">
+                    <input type="text" id="reg-username" placeholder="Username"/>
+                    <input type="text" id="reg-email" placeholder="email address"/>
+                    <input type="password" id="reg-password" placeholder="password"/>
+                    <button onclick="register()">create</button>
+                    <p class="message">Already registered? <a onclick="openLogin()">Sign In</a></p>
+                  </form>
+                  <form action="javascript:void(0)" class="login-form" id="log-form">
+                    <input type="text" id="log-username" placeholder="username"/>
+                    <input type="password" id="log-password" placeholder="password"/>
+                    <button onclick="login()">login</button>
+                    <p class="message">Not registered? <a onclick="openRegister()">Create an account</a></p>
+                  </form>
+                </div>
+              </div>
+    <!-- <script src="/ui/js/index.js"></script> -->
+            </div>
+
+
+
+
+
+        </div>
+        <div class="box">
+
+            <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <!-- <div class="cover">
+
+                            </div> -->
+                            <div class="user">
+                                <img class="img-circle" src="/ui/img/rotating_card_profile.png"/>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">About Me</h3><br>
+                                    <!-- <p class="profession">Web Developer</p> -->
+                                    <p class="text-center">"This tile is supposed to take you to my profile page"</p>
+                                </div>
+                                <!-- <div class="footer">
+                                    <div class="rating">
+                                        <i class="fa fa-mail-forward"></i> Auto Rotation
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div> <!-- end front panel -->
+                        <div class="back">
+                            <div class="header">
+
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                  <h5 class="motto">"If this tile doesn't take you to the home page please contact me!"</h5>
+                                  <button ><a style = "text-align: center" href = "/ui/html/about.html">Go</a></button>
+                                </div>
+                            </div>
+                            <!-- <div class="footer">
+
+                                <div class="social-links text-center">
+
+                                    <a href="http://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                    <a href="http://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                    <a href="http://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                </div>
+                            </div> -->
+                        </div> <!-- end back panel -->
+                    </div> <!-- end card -->
+                </div>
+
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <!-- <div class="cover">
+                                <img src="/ui/img/rotating_card_thumb3.png"/>
+                            </div> -->
+                            <div class="user">
+                                <img class="img-circle" src="/ui/img/rotating_card_profile.png"/>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">My Blog</h3><br>
+                                    <!-- <p class="profession">Web Developer</p> -->
+
+                                    <p class="text-center">"This tile is supposed to take you to my blog!"</p>
+                                </div>
+                                <!-- <div class="footer">
+                                    <div class="rating">
+                                        <i class="fa fa-mail-forward"></i> Auto Rotation
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div> <!-- end front panel -->
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h5 class="motto">"If this tile doesn't take you to the blog page please contact me!"</h5>
+                                    <button ><a style = "text-align: center" href = "/ui/html/about.html">Go</a></button>
+                                </div>
+                            </div>
+                            <!-- <div class="footer">
+                                <div class="social-links text-center">
+                                    <a href="http://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                    <a href="http://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                    <a href="http://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                </div>
+                            </div> -->
+                        </div> <!-- end back panel -->
+                    </div> <!-- end card -->
+                  </div>
+
+
+
+                  <div class="card-container">
+                    <div class="card">
+                        <div class="front">
+                            <!-- <div class="cover">
+                                <img src="/ui/img/rotating_card_thumb3.png"/>
+                            </div> -->
+                            <div class="user">
+                                <img class="img-circle" src="/ui/img/rotating_card_profile.png"/>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">About You</h3>
+                                    <!-- <p class="profession">Web Developer</p> -->
+                                    <br>
+                                    <p class="text-center">"Let me guess something about you!!"</p>
+                                </div>
+                                <!-- <div class="footer">
+                                    <div class="rating">
+                                        <i class="fa fa-mail-forward"></i> Auto Rotation
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div> <!-- end front panel -->
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h5 class="motto">"If this tile doesn't take you to your profile page please contact me!"</h5>
+                                    <button ><a style = "text-align: center" href = "profile">Go</a></button>
+                                </div>
+                            </div>
+                            <!-- <div class="footer">
+                                <div class="social-links text-center">
+                                    <a href="http://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                    <a href="http://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                    <a href="http://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                </div>
+                            </div> -->
+                        </div> <!-- end back panel -->
+                    </div> <!-- end card -->
+                </div> <!-- end card-container -->
+          <!-- </div> -->
+        </div>
+</body>
+</html>

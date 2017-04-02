@@ -1,11 +1,32 @@
 body {
     font-family: sans-serif;
     background-color: lightgrey;
-    margin-top: 75px;
+    margin-top: 50px;
+}
+
+.container {
+  color: green;
+  max-width: 800px;
+  padding: 0 200px 0 200px;
+}
+
+.navBar {
+  background-color: grey;
+}
+
+.centerslides {
+    text-align: center;
+    width: 500px;
+    height: 600px;
+    margin-left: auto ;
+    margin-right: auto ;
 }
 
 .center {
-    text-align: center;
+  text-align: center;
+  width: 100%;
+  margin: auto ;
+  background-color: grey;
 }
 
 .text-big {
@@ -17,6 +38,21 @@ body {
 }
 
 .img-medium {
-    height: 200px;
+    height: 100%;
+    width: 100%;
 }
 
+#mybox {
+    border-radius: 25px;
+    background: #73AD21;
+    margin: auto;
+    width: 500px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.form {
+    margin-top: 0;
+    text-align: center;
+    height: auto;
+}
