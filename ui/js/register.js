@@ -16,8 +16,6 @@ function register() {
   var username = document.getElementById('reg-username').value;
   var password = document.getElementById('reg-password').value;
   var email = document.getElementById('reg-email').value;
-  console.log(username);
-  console.log(password);
   request.open('POST','/register',true);
   request.setRequestHeader('Content-Type', 'application/json');
   request.send(JSON.stringify({username: username, password: password, email: email}));
