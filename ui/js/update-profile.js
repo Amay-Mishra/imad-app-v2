@@ -18,7 +18,7 @@ function update_profile() {
   var email = document.getElementById('email').value;
   var gender = document.getElementById('gender').value;
   var description = document.getElementById('description').value;
-  request.open('POST','http://localhost:8080/update-profile',true);
+  request.open('POST','/update-profile',true);
   request.setRequestHeader('Content-Type', 'application/json');
   request.send(JSON.stringify({fname: fname, lname: lname, email: email,gender: gender, description: description}));
 };
