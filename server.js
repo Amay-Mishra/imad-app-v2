@@ -27,11 +27,11 @@ var hashing = {
 
 var config = {
   //host: 'localhost',
-  user: 'postgres',
-  database: 'imad',
-  host: '127.0.0.1',
+  user: 'amay-mishra',
+  database: 'amay-mishra',
+  host: 'localhost:5432',
   port: '5432',
-  password: process.env.LOCAL_DB_PASSWORD //process.env.DB-PASSWORD,
+  password: process.env.DB_PASSWORD //process.env.DB-PASSWORD,
 };
 
 var pool = new Pool(config);
