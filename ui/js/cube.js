@@ -13,9 +13,9 @@ var init = function() {
     showPanelButtons[i].addEventListener( 'click', onButtonClick, false);
   }
 
-  document.getElementById('toggle-backface-visibility').addEventListener( 'click', function(){
-    box.toggleClassName('panels-backface-invisible');
-  }, false);
+//   document.getElementById('toggle-backface-visibility').addEventListener( 'click', function(){
+//     box.toggleClassName('panels-backface-invisible');
+//   }, false);
 
 };
 
