@@ -12,13 +12,13 @@ var init = function() {
   for (var i=0, len = showPanelButtons.length; i < len; i++) {
     showPanelButtons[i].addEventListener( 'click', onButtonClick, false);
   }
-  toggle();
+  box.toggleClassName('panels-backface-invisible');
     console.log(box);
 
 };
 
-var toggle = function(){
-     box.toggleClassName('panels-backface-invisible');
-  };
+// var toggle = function(){
+//      box.toggleClassName('panels-backface-invisible');
+//   };
 
 window.addEventListener( 'DOMContentLoaded', init, false);
