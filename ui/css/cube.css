@@ -35,6 +35,7 @@
   font-weight: bold;
   color: white;
   text-align: center;
+  backface-visibility: hidden;
 }
 
 #cube .panels-backface-invisible figure {
