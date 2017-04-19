@@ -38,12 +38,12 @@
   backface-visibility: hidden;
 }
 
-#cube .panels-backface-invisible figure {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
+/*#cube .panels-backface-invisible figure {*/
+/*  -webkit-backface-visibility: hidden;*/
+/*  -moz-backface-visibility: hidden;*/
+/*  -o-backface-visibility: hidden;*/
+/*  backface-visibility: hidden;*/
+/*}*/
 
 #cube .front  {background: hsla(   0, 100%, 50%, 0.7 );}
 #cube .back   { background: hsla(  60, 100%, 50%, 0.7 ); }
